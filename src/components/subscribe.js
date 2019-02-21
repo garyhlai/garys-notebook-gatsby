@@ -1,30 +1,30 @@
 import React, { Component } from "react";
-//import addToMailchimp from "gatsby-plugin-mailchimp";
+import addToMailchimp from "gatsby-plugin-mailchimp";
 
 export default class Subscribe extends Component {
   constructor(props) {
     super(props);
-    this.state = { email: "" };
+    this.state = { email: "", message: "" };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    /*
-        addToMailchimp(email, listFields) // listFields are optional if you are only capturing the email address.
-        .then(data => {
-          // I recommend setting data to React state
-          // but you can do whatever you want (including ignoring this `then()` altogether)
-          console.log(data)
-        })
-        .catch(() => {
-          // unnecessary because Mailchimp only ever
-          // returns a 200 status code
-          // see below for how to handle errors
-        })*/
+
+    addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
+      .then(data => {
+        // I recommend setting data to React state
+        // but you can do whatever you want (including ignoring this `then()` altogether)
+
+        this.setState({
+          message: "Success, you have been subscribed to the mailing list!"
+        });
+        console.log(this.state.message);
+      });
+
     //this.setState(e.target.value);
-    console.log(this.state.email);
+    //console.log(this.state.email);
   }
 
   handleChange(event) {
@@ -45,7 +45,9 @@ export default class Subscribe extends Component {
             placeholder="Enter your email address"
             onChange={this.handleChange}
           />
+          <input type="submit" />
         </form>
+        <p>{this.state.message}</p>
       </div>
     );
   }

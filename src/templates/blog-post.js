@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Layout from "../components/layout";
+import Subscribe from "../components/subscribe";
 
 export default function Template({ data }) {
   const post = data.markdownRemark;
@@ -15,6 +16,7 @@ export default function Template({ data }) {
           Posted by {post.frontmatter.author} on {post.frontmatter.date}
         </h4>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Subscribe />
       </Layout>
     </div>
   );
