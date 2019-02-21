@@ -1,6 +1,7 @@
 import React from "react";
 //import { Link } from "gatsby";
 import Layout from "../components/layout";
+import Subscribe from "../components/subscribe";
 
 const IndexPage = () => {
   return (
@@ -40,16 +41,17 @@ const IndexPage = () => {
           Gary
           <br />
           <br />
-          <form
-            name="contact"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input name="name" placeholder="Your name.." type="text" />
-            <button>Subscribe</button>
-          </form>
         </p>
+        {/*<form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input name="name" placeholder="Your name.." type="text" />
+          <button>Subscribe</button>
+        </form>*/}
+        <Subscribe />
       </Layout>
     </div>
   );
