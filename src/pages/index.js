@@ -38,6 +38,17 @@ const IndexPage = () => {
           <br />
           Best, <br />
           Gary
+          <br />
+          <br />
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input name="name" placeholder="Your name.." type="text" />
+            <button>Subscribe</button>
+          </form>
         </p>
       </Layout>
     </div>
