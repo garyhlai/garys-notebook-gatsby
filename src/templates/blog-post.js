@@ -9,7 +9,10 @@ export default function Template({ data }) {
   return (
     <div>
       <Layout>
-        <Link to="/blog">Go Back</Link>
+        <Link to="/blog">
+          {" "}
+          <i class="material-icons">arrow_back</i>
+        </Link>
         <hr />
         <h1>{post.frontmatter.title}</h1>
         <h4>

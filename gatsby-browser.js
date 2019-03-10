@@ -5,3 +5,5 @@
  */
 
 // You can delete this file if you're not using it
+import "materialize-css/dist/css/materialize.css";
+import "./src/styles/global.css";

@@ -7,7 +7,14 @@ const IndexPage = () => {
   return (
     <div>
       <Layout>
-        <h1>Who am I?</h1>
+        <h2>
+          **************
+          <br />
+          Who am I?
+          <br />
+          **************
+        </h2>
+
         <p>
           Hi guys,
           <br /> <br />
