@@ -9,16 +9,20 @@ export default function Template({ data }) {
   return (
     <div>
       <Layout>
-        <Link to="/blog">
+        <Link to="/">
           {" "}
           <i class="material-icons">arrow_back</i>
         </Link>
         <hr />
-        <h1>{post.frontmatter.title}</h1>
-        <h4>
-          Posted by {post.frontmatter.author} on {post.frontmatter.date}
-        </h4>
+        <h3>{post.frontmatter.title}</h3>
+        <small>Posted on {post.frontmatter.date}</small>
+        <br />
+        <br />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <br />
+        <br />
+        <br />
+        <br />
         <Subscribe />
       </Layout>
     </div>
@@ -34,6 +38,7 @@ export const postQuery = graphql`
         title
         author
         date
+        tags
       }
     }
   }

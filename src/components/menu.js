@@ -12,10 +12,10 @@ const Menu = () => (
       }}
     >
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/">Blog</Link>
       </li>
       <li>
-        <Link to="/blog">Blog</Link>
+        <Link to="/about">About</Link>
       </li>
     </ul>
   </div>
