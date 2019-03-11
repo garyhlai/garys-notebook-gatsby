@@ -31,85 +31,18 @@ export default class Subscribe extends Component {
   handleChange(event) {
     this.setState({ email: event.target.value });
   }
-  /*
-      <div>
-        <form
-          id="subscribe-blog"
-          autocomplete="off"
-          onSubmit={this.handleSubmit}
-        >
-          <input
-            type="email"
-            value={this.state.value}
-            placeholder="Enter your email address"
-            onChange={this.handleChange}
-          />
-          <input type="submit" />
-        </form>
-        <p>{this.state.message}</p>
-      </div>
 
-
- <section class="widget widget_blog_subscription">
-          <form
-            action="/newsletter"
-            method="post"
-            id="subscribe-blog"
-            autocomplete="off"
-            onSubmit="handleSubscribe(event) & showHide()"
-          >
-            <p>Subscribe</p>
-            <p>
-              <input
-                type="name"
-                name="subscribe[name]"
-                placeholder="Enter your name"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Enter your name'"
-                value=""
-                id="name"
-              />
-              <input
-                type="email"
-                name="subscribe[email]"
-                placeholder="Enter your email address"
-                onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Enter your email address'"
-                value=""
-                id="email"
-              />
-            </p>
-
-            <div id="hidden_div">
-              <div id="newsletterSuccess">
-                <header />
-                <p>
-                  <i class="check circle icon" />
-                  You're all signed up for the newsletter.
-                </p>
-              </div>
-            </div>
-
-            <p>
-              <input type="submit" value="Follow me!" />
-            </p>
-          </form>
-        </section>
-
-
-
-
-
-   */
+  componentDidMount() {
+    var elems = document.querySelectorAll(".tooltipped");
+    const M = window.M;
+    var instances = M.Tooltip.init(elems);
+    console.log("new script was loaded");
+  }
 
   render() {
     return (
       <div>
-        <form
-          id="subscribe-blog"
-          autocomplete="off"
-          onSubmit={this.handleSubmit}
-        >
+        <form id="subscribe-blog" onSubmit={this.handleSubmit}>
           <input
             id="newsletter"
             type="email"
@@ -129,6 +62,23 @@ export default class Subscribe extends Component {
           </button>
         </form>
         <p class="green-text">{this.state.message}</p>
+        <a
+          href="https://twitter.com/gary_doesnt_lai"
+          className="tooltipped btn-floating btn-small grey darken-4"
+          data-tooltip="Twitter"
+          data-position="top"
+        >
+          <i class="fab fa-twitter" />
+        </a>
+        <a
+          href="#"
+          className="tooltipped btn-floating btn-small grey darken-4"
+          id=""
+          data-tooltip="Medium"
+          data-position="top"
+        >
+          <i class="fab fa-medium" />
+        </a>
       </div>
     );
   }

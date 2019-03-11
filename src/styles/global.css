@@ -18,3 +18,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
 #newsletter {
   margin-right: 2%;
 }
+
+.tooltipped.btn-floating.btn-small.darken-4 {
+  margin-right: 2%;
+}
+.material-tooltip {
+  font-size: 0.8rem;
+}

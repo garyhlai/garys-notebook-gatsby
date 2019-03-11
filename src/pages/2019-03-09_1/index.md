@@ -6,7 +6,7 @@ author: "Gary Lai"
 tags: ["Git"]
 ---
 
-You did something and ended up in the detach head branch. You don’t know how you ended up here but you did. But you want to keep everything as they are right now and make the current branch the master, instead of merging. _(Note: to check your current branch, run “git branch”, the “\_” one is your current branch)_
+You did something and ended up in the detach head branch. You don’t know how you ended up here but you did. But you want to keep everything as they are right now and make the current branch the master, instead of merging. _(Note: to check your current branch, run `git branch`, the starred one is your current branch)_
 
 Don’t freak out, but be careful what you do because one misstep might mean hours of work go right down the drain.
 

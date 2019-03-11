@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
 
 export default function HTML(props) {
   return (
@@ -16,7 +17,17 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+          {}
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js">{}</script>
       </head>
+
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
