@@ -645,3 +645,7 @@ a,
 .chip {
   font-family: "Roboto", sans-serif;
 }
+
+.link {
+  color: #039be5;
+}

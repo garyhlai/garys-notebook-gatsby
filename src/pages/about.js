@@ -16,7 +16,7 @@ const AboutPage = ({ data }) => {
           *************
         </h2>
         <p>Hi guys, </p>
-        <br /> <br />
+        <br />
         <p>
           My name is Gary Haizhi Lai and I am an indie maker and a freelance web
           dev (contact me at <strong>glai9665@gmail.com</strong> for work). I
@@ -41,9 +41,10 @@ const AboutPage = ({ data }) => {
           I will start a regular newsletter soon - subscribe if you’d like to
           follow my notes and connect!
         </p>
-        <br />
-        Best, <br />
-        Gary
+        <p>
+          Best, <br />
+          Gary
+        </p>
         <br />
         <br />
         <Subscribe />

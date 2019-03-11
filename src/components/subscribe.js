@@ -71,9 +71,8 @@ export default class Subscribe extends Component {
           <i class="fab fa-twitter" />
         </a>
         <a
-          href="#"
+          href="https://medium.com/@garylai_34633"
           className="tooltipped btn-floating btn-small grey darken-4"
-          id=""
           data-tooltip="Medium"
           data-position="top"
         >
