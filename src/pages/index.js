@@ -3,6 +3,8 @@ import React from "react";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 import Subscribe from "../components/subscribe";
+// Utilities
+import kebabCase from "lodash/kebabCase";
 
 const IndexPage = ({ data }) => {
   return (
@@ -17,11 +19,11 @@ const IndexPage = ({ data }) => {
             </h3>
             <p>{post.node.excerpt}</p>
 
-            <strong>
-              {post.node.frontmatter.tags.map(tag => (
-                <div class="chip">{tag}</div>
-              ))}
-            </strong>
+            {post.node.frontmatter.tags.map(tag => (
+              <div class="chip">
+                <Link to={`/tags/${tag.toLowerCase()}/`}>{tag}</Link>
+              </div>
+            ))}
 
             {/*
             <small>

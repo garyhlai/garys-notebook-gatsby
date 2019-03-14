@@ -25,3 +25,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .material-tooltip {
   font-size: 0.8rem;
 }
+
+.tagHeader {
+  border-bottom: 2px solid red;
+}

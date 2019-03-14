@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 // Components
 import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
@@ -13,23 +14,29 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <div>
-      <h1>{tagHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields;
-          const { title } = node.frontmatter;
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          );
-        })}
-      </ul>
-      {/*
+      <Layout>
+        <h2 class="tagHeader">{tagHeader}</h2>
+        <ul>
+          {edges.map(({ node }) => {
+            const { slug } = node.fields;
+            const { title } = node.frontmatter;
+            const { excerpt } = node;
+            return (
+              <div>
+                <h3 key={slug}>
+                  <Link to={slug}>{title}</Link>
+                </h3>
+                <p>{excerpt}</p>
+              </div>
+            );
+          })}
+        </ul>
+        {/*
               This links to a page that does not yet exist.
               We'll come back to it!
             */}
-      <Link to="/tags">All tags</Link>
+        <Link to="/tags">All tags</Link>
+      </Layout>
     </div>
   );
 };
@@ -44,6 +51,7 @@ Tags.propTypes = {
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
+            excerpt: PropTypes.string.isRequired,
             frontmatter: PropTypes.shape({
               title: PropTypes.string.isRequired
             }),
@@ -69,6 +77,7 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          excerpt
           fields {
             slug
           }
