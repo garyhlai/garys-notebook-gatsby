@@ -27,5 +27,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 .tagHeader {
-  border-bottom: 2px solid red;
+  border-bottom: 3px solid #f1f1f1;
+  padding-bottom: 1%;
 }

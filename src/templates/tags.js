@@ -1,9 +1,11 @@
+//Page that displays after you click on each tag
 import React from "react";
 import PropTypes from "prop-types";
 
 // Components
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
+import AllTags from "../components/allTags";
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
@@ -34,8 +36,9 @@ const Tags = ({ pageContext, data }) => {
         {/*
               This links to a page that does not yet exist.
               We'll come back to it!
+                  <Link to="/tags">All tags</Link>
             */}
-        <Link to="/tags">All tags</Link>
+        <AllTags />
       </Layout>
     </div>
   );
