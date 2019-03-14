@@ -16,9 +16,12 @@ const IndexPage = ({ data }) => {
               </Link>
             </h3>
             <p>{post.node.excerpt}</p>
-            <div class="chip">
-              <strong>{post.node.frontmatter.tags}</strong>
-            </div>
+
+            <strong>
+              {post.node.frontmatter.tags.map(tag => (
+                <div class="chip">{tag}</div>
+              ))}
+            </strong>
 
             {/*
             <small>
