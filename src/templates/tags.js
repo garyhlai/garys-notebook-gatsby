@@ -21,12 +21,12 @@ const Tags = ({ pageContext, data }) => {
         <ul>
           {edges.map(({ node }) => {
             const { slug } = node.fields;
-            const { title } = node.frontmatter;
+            const { title, path } = node.frontmatter;
             const { excerpt } = node;
             return (
               <div>
                 <h3 key={slug}>
-                  <Link to={slug}>{title}</Link>
+                  <Link to={path}>{title}</Link>
                 </h3>
                 <p>{excerpt}</p>
               </div>
@@ -86,6 +86,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            path
           }
         }
       }
