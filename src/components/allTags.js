@@ -22,7 +22,7 @@ export default () => (
       <div>
         {data.allMarkdownRemark.group.map(tag => (
           <div class="chip">
-            <Link to={`/tags/`}>
+            <Link to={`/tags/${tag.fieldValue.toLowerCase()}`}>
               {tag.fieldValue} ({tag.totalCount})
             </Link>
           </div>
