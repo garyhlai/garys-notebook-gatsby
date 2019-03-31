@@ -78,6 +78,14 @@ export default class Subscribe extends Component {
         >
           <i class="fab fa-medium" />
         </a>
+        <a
+          href="https://www.instagram.com/garys_notebook"
+          className="tooltipped btn-floating btn-small grey darken-4"
+          data-tooltip="Instagram"
+          data-position="top"
+        >
+          <i class="fab fa-instagram" />
+        </a>
       </div>
     );
   }
