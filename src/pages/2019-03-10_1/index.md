@@ -3,7 +3,7 @@ path: "/20190310_1"
 date: "2019-03-10"
 title: "How to Add External Javascript Script Tag in Gatsby"
 author: "Gary Lai"
-tags: ["Gatsby"]
+tags: ["Gatsby", "Javascript"]
 ---
 
 This is a tricky topic and there are few good resources out there that teach how to do it. After a few hours of flapping around I finally figured out how to do this. I will use the example of adding the Materialize javascript cdn tag and initializing Materialize tooltip for the Twitter and Medium icons at the bottom of this blog page you are reading. Feel free to follow along exactly what I am doing so that you understand this process first and then adapt for your own use case. As reference, you can find the source code <a class="link" href="https://github.com/ghlai9665/garys-notebook-gatsby">here</a>.

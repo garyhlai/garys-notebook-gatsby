@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`
           }}
         >
-          {siteTitle}
+          <i class="em em-notebook_with_decorative_cover" /> {siteTitle}
         </Link>
       </h2>
     </div>

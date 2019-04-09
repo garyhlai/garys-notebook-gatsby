@@ -3,7 +3,7 @@ path: "/20190409_2"
 date: "2019-04-09"
 title: "How to Use Google Translate in Your Node App in 3 Steps"
 author: "Gary Lai"
-tags: ["Google Cloud", "Node.js"]
+tags: ["Googlecloud", "Nodejs"]
 ---
 
 The <a href="https://cloud.google.com/translate/docs/quickstart-client-libraries" class="inPage">official documentation</a> on this leaves quite a few gaps and took a while to figure out so I'm sharing a quick tutorial here.
