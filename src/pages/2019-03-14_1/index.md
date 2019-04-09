@@ -10,9 +10,12 @@ Before npm installing any package, or use Material-UI or react-materialize, let 
 
 First, go to your `index.html` file, in the `<header>` section, include the Materialize CDN:
 
-```
- <!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+```html
+<!-- Compiled and minified CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+/>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -24,7 +27,7 @@ The only thing that is left now is to show you how to initialize the cool javasc
 
 Go to your App component, in the constructor, write:
 
-```
+```javascript
 class App extends Component {
   constructor() {
     super();
@@ -36,7 +39,7 @@ class App extends Component {
 
 And then under the constructor, write:
 
-```
+```javascript
 componentDidMount() {
     var elems1 = document.querySelectorAll(".modal");
     var instances1 = this.M.Modal.init(elems1);

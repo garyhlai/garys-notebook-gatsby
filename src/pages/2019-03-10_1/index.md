@@ -17,9 +17,9 @@ in your root directory to get access to the main html file.
 
 Then, open `html.js` file and in the `<head>` section, add in:
 
-```
+```javascript
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-{}
+  {}
 </script>
 ```
 
@@ -31,7 +31,7 @@ By now, we are pretty much done in terms of loading an external javascript tag. 
 
 Now I am going to continue to show how to call variables from the loaded external script. In this particular use case, if you call this block of code
 
-```
+```javascript
 var elems = document.querySelectorAll(".tooltipped");
 const M = window.M;
 var instances = M.Tooltip.init(elems);
@@ -39,7 +39,7 @@ var instances = M.Tooltip.init(elems);
 
 in the html.js using `dangerouslySetInnerHTML`, it would only work once when the page loads for the first time. In other words, when the page first loads, the tooltips will show on hover; however, if you navigate away from the main page to another page, the tooltips will no longer show. This is because the tooltip buttons are in a component called `Subscribe`, you would have to initialize it every time this component reloads. Therefore, the solution is adding this block of code to the component `Subscribe` that contains the tooltip buttons.
 
-```
+```javascript
  componentDidMount() {
     var elems = document.querySelectorAll(".tooltipped");
     const M = window.M;

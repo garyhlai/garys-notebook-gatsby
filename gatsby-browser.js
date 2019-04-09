@@ -8,3 +8,4 @@
 import "materialize-css/dist/css/materialize.css";
 import "./src/styles/global.css";
 import "normalize.css/normalize.css";
+require("prismjs/themes/prism-coy.css");
