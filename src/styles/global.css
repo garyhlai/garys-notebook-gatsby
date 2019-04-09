@@ -30,3 +30,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 3px solid #f1f1f1;
   padding-bottom: 1%;
 }
+
+#who-am-I {
+  border-bottom: 3px solid #f1f1f1;
+  width: 19%;
+}

@@ -14,7 +14,7 @@ export default function Template({ data }) {
           <i class="material-icons">arrow_back</i>
         </Link>
         <hr />
-        <h3>{post.frontmatter.title}</h3>
+        <h2>{post.frontmatter.title}</h2>
         <small>Posted on {post.frontmatter.date}</small>
         <br />
         <br />

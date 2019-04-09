@@ -45,6 +45,11 @@ a {
   color: #333;
   text-decoration: none;
 }
+
+a.inPage {
+  text-decoration: underline;
+}
+
 a:active,
 a:hover {
   outline-width: 0;
