@@ -21,6 +21,10 @@ export default function HTML(props) {
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         />
+        <link
+          href="https://afeld.github.io/emoji-css/emoji.css"
+          rel="stylesheet"
+        />
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
           {}
