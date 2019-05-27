@@ -6,6 +6,9 @@ import compress from "../images/Bathroom_Atlamtic_2.jpg";
 import givingLove from "../images/givingLove.png";
 import workLog from "../images/workLog.png";
 import lifecycle from "react-pure-lifecycle";
+import alfred from "../images/Alfred.png";
+import youva from "../images/youvaHome.png";
+import shapeshift from "../images/shapeshift.png";
 //import Layout from "../components/layout";
 const methods = {
   componentDidMount() {
@@ -36,17 +39,15 @@ const PortfolioPage = ({ data }) => {
                   src={compress}
                   style={{ height: "200px" }}
                 />
-                <a href="https://github.com/ghlai9665/YOUVA/tree/master/compress-image">
-                  <span class="card-title white-text">
-                    <strong>Image Compressor</strong>
-                  </span>
-                </a>
               </div>
               <div class="card-content">
+                <a href="https://github.com/ghlai9665/YOUVA/tree/master/compress-image">
+                  <span class="card-title blue-text">Image Compressor</span>
+                </a>
                 <p>
                   <strong>Description:</strong> A python script that compresses
                   images by more than 1000% (way greater compression rate than
-                  most online image compressor).
+                  most online image compressors).
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Python
@@ -59,20 +60,18 @@ const PortfolioPage = ({ data }) => {
               <div class="card-image">
                 <img
                   class="materialboxed"
-                  src={givingLove}
+                  src={shapeshift}
                   style={{ height: "200px" }}
                 />
-                <a href="https://github.com/ghlai9665/givingLove/tree/b70b1fb6b8792bbad19f6c2bb53bb220471300f9">
-                  <span class="card-title black-text">
-                    <strong>Giving Love</strong>
-                  </span>
-                </a>
               </div>
               <div class="card-content">
+                <a href="https://github.com/ghlai9665/shapeshift-english">
+                  <span class="card-title blue-text">Shapeshift English</span>
+                </a>
                 <p>
-                  <strong>Description:</strong> A web app that lets you give
-                  whatever you want: love, positivity, fucks etc... But try to
-                  keep it positive and PG13 please :) .
+                  <strong>Description:</strong> A website built for an English
+                  education startup in China. (Client self-substituted her own
+                  contents and links)
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Html, Css, Javascript
@@ -80,6 +79,7 @@ const PortfolioPage = ({ data }) => {
               </div>
             </div>
           </div>
+
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
@@ -88,13 +88,11 @@ const PortfolioPage = ({ data }) => {
                   src={workLog}
                   style={{ height: "200px" }}
                 />
-                <a href="https://github.com/ghlai9665/worklog">
-                  <span class="card-title black-text">
-                    <strong>Sospiro</strong>
-                  </span>
-                </a>
               </div>
               <div class="card-content">
+                <a href="https://github.com/ghlai9665/worklog">
+                  <span class="card-title blue-text">Sospiro</span>
+                </a>
                 <p>
                   <strong>Description:</strong> A work log that collects your
                   goal and logs your progress each day.
@@ -102,6 +100,8 @@ const PortfolioPage = ({ data }) => {
                 <p>
                   <strong>Tech Stack:</strong> Reactjs, GraphQL, MongoDB
                 </p>
+                <br />
+                <br />
               </div>
             </div>
           </div>
@@ -112,27 +112,54 @@ const PortfolioPage = ({ data }) => {
               <div class="card-image">
                 <img
                   class="materialboxed"
-                  src={compress}
+                  src={youva}
                   style={{ height: "200px" }}
                 />
-                <a href="https://github.com/ghlai9665/YOUVA/tree/master/compress-image">
-                  <span class="card-title white-text">
-                    <strong>Image Compressor</strong>
-                  </span>
-                </a>
               </div>
               <div class="card-content">
+                <a href="http://www.youvahome.cn">
+                  <span class="card-title blue-text">
+                    <span style={{ "margin-left:": "5px" }}>Youva Home</span>
+                  </span>
+                </a>
                 <p>
-                  <strong>Description:</strong> A python script that compresses
-                  images by more than 1000% (way greater compression rate than
-                  most online image compressor).
+                  <strong>Description:</strong> A website designed for Youva
+                  Home, a tile shop in Hangzhou, China.
                 </p>
                 <p>
-                  <strong>Tech Stack:</strong> Python
+                  <strong>Tech Stack:</strong> Html, Css, Javascript, Bootstrap
                 </p>
               </div>
             </div>
           </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  src={alfred}
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div class="card-content">
+                <a href="https://github.com/ghlai9665/alfredo">
+                  <span class="card-title blue-text">Alfred</span>
+                </a>
+                <p>
+                  <strong>Description:</strong> A mobile app that facilitates
+                  doctor-patient communication. Patients can directly text their
+                  doctors and texts will show up on the doctor's end in an
+                  email-like interface. (Backend is finished, frontend is
+                  work-in-progress)
+                </p>
+                <p>
+                  <strong>Tech Stack:</strong> React Native, Firebase, Nodejs,
+                  Nexmo API
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
@@ -141,13 +168,11 @@ const PortfolioPage = ({ data }) => {
                   src={givingLove}
                   style={{ height: "200px" }}
                 />
-                <a href="https://github.com/ghlai9665/givingLove/tree/b70b1fb6b8792bbad19f6c2bb53bb220471300f9">
-                  <span class="card-title black-text">
-                    <strong>Giving Love</strong>
-                  </span>
-                </a>
               </div>
               <div class="card-content">
+                <a href="https://github.com/ghlai9665/givingLove/tree/b70b1fb6b8792bbad19f6c2bb53bb220471300f9">
+                  <span class="card-title blue-text">Giving Love</span>
+                </a>
                 <p>
                   <strong>Description:</strong> A web app that lets you give
                   whatever you want: love, positivity, fucks etc... But try to
@@ -155,31 +180,6 @@ const PortfolioPage = ({ data }) => {
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Html, Css, Javascript
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img
-                  class="materialboxed"
-                  src={workLog}
-                  style={{ height: "200px" }}
-                />
-                <a href="https://github.com/ghlai9665/worklog">
-                  <span class="card-title black-text">
-                    <strong>Sospiro</strong>
-                  </span>
-                </a>
-              </div>
-              <div class="card-content">
-                <p>
-                  <strong>Description:</strong> A work log that collects your
-                  goal and logs your progress each day.
-                </p>
-                <p>
-                  <strong>Tech Stack:</strong> Reactjs, GraphQL, MongoDB
                 </p>
               </div>
             </div>
