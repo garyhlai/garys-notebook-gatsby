@@ -9,6 +9,7 @@ import lifecycle from "react-pure-lifecycle";
 import alfred from "../images/Alfred.png";
 import youva from "../images/youvaHome.png";
 import shapeshift from "../images/shapeshift.png";
+import chineseNotebook from "../images/myChineseNotebook.png";
 //import Layout from "../components/layout";
 const methods = {
   componentDidMount() {
@@ -129,6 +130,12 @@ const PortfolioPage = ({ data }) => {
                 <p>
                   <strong>Tech Stack:</strong> Html, Css, Javascript, Bootstrap
                 </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
               </div>
             </div>
           </div>
@@ -159,27 +166,63 @@ const PortfolioPage = ({ data }) => {
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    class="materialboxed"
+                    src={givingLove}
+                    style={{ height: "200px" }}
+                  />
+                </div>
+                <div class="card-content">
+                  <a href="https://github.com/ghlai9665/givingLove/tree/b70b1fb6b8792bbad19f6c2bb53bb220471300f9">
+                    <span class="card-title blue-text">Giving Love</span>
+                  </a>
+                  <p>
+                    <strong>Description:</strong> A web app that lets you give
+                    whatever you want: love, positivity, fucks etc... But try to
+                    keep it positive and PG13 please :) .
+                  </p>
+                  <p>
+                    <strong>Tech Stack:</strong> Html, Css, Javascript
+                  </p>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
                 <img
                   class="materialboxed"
-                  src={givingLove}
+                  src={chineseNotebook}
                   style={{ height: "200px" }}
                 />
               </div>
               <div class="card-content">
-                <a href="https://github.com/ghlai9665/givingLove/tree/b70b1fb6b8792bbad19f6c2bb53bb220471300f9">
-                  <span class="card-title blue-text">Giving Love</span>
+                <a href="#">
+                  <span class="card-title blue-text">
+                    <span style={{ "margin-left:": "5px" }}>
+                      Chinese Notebook
+                    </span>
+                  </span>
                 </a>
                 <p>
-                  <strong>Description:</strong> A web app that lets you give
-                  whatever you want: love, positivity, fucks etc... But try to
-                  keep it positive and PG13 please :) .
+                  <strong>Description:</strong> A notebook that helps you take
+                  notes in Chinese. Whenever you enter Hanzi, the pinyin and
+                  definition automatically shows up.
                 </p>
                 <p>
-                  <strong>Tech Stack:</strong> Html, Css, Javascript
+                  <strong>Tech Stack:</strong> Reactjs, Nodejs, Firebase, Google
+                  Translate API
                 </p>
               </div>
             </div>
