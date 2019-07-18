@@ -19,7 +19,8 @@ input = sys.argv[1]
 # ... your program here
 
 #direct output
-sys.stdout.flush(your_output)
+print(your_output)
+sys.stdout.flush()
 
 ```
 
