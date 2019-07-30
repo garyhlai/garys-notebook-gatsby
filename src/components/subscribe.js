@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import addToMailchimp from "gatsby-plugin-mailchimp";
+//import addToMailchimp from "gatsby-plugin-mailchimp";
 
 export default class Subscribe extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ export default class Subscribe extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-
+    /*
     addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
       .then(data => {
         // I recommend setting data to React state
@@ -23,7 +23,7 @@ export default class Subscribe extends Component {
         });
         console.log(this.state.message);
       });
-
+*/
     //this.setState(e.target.value);
     //console.log(this.state.email);
   }
