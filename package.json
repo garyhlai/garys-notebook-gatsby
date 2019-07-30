@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.3.16",
+    "gatsby": "^2.11.0",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-catch-links": "^2.0.11",
     "gatsby-plugin-mailchimp": "^4.0.0",
@@ -17,7 +17,7 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.14",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "material-design-icons": "^3.0.1",
     "materialize-css": "^1.0.0-rc.2",
     "normalize.css": "^8.0.1",
