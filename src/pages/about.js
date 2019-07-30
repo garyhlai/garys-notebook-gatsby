@@ -20,8 +20,8 @@ const AboutPage = ({ data }) => {
           <i class="em em-hammer_and_wrench" /> and a full-stack freelancer{" "}
           <i class="em em-herb" /> interested in web/mobile dev, AI and
           blockchain (contact me at <strong>glai9665@gmail.com</strong> for
-          work). I recently graduated from Columbia University in NYC (December
-          2018) and set out to travel the world while working remotely.{" "}
+          work). I recently graduated from Columbia University in NYC (2019) and
+          set out to travel the world while working remotely.{" "}
         </p>
 
         <p>
