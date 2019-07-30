@@ -47,8 +47,10 @@ const PortfolioPage = ({ data }) => {
                 </a>
                 <p>
                   <strong>Description:</strong> A python script that compresses
-                  images by more than 1000% (way greater compression rate than
-                  most online image compressors).
+                  images by more than 1000% (compression rate exceeds most
+                  online image compressors). Solved the problem of slow loading
+                  for a client who needed a website that required the display of
+                  many photos.
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Python
@@ -77,6 +79,10 @@ const PortfolioPage = ({ data }) => {
                 <p>
                   <strong>Tech Stack:</strong> Html, Css, Javascript
                 </p>
+                <br />
+                <br />
+                <br />
+                <br />
               </div>
             </div>
           </div>
@@ -95,12 +101,16 @@ const PortfolioPage = ({ data }) => {
                   <span class="card-title blue-text">Sospiro</span>
                 </a>
                 <p>
-                  <strong>Description:</strong> A work log that collects your
-                  goal and logs your progress each day.
+                  <strong>Description:</strong> A work log that logs progress
+                  against goals each day.
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Reactjs, GraphQL, MongoDB
                 </p>
+                <br />
+                <br />
+                <br />
+                <br />
                 <br />
                 <br />
               </div>
@@ -153,47 +163,15 @@ const PortfolioPage = ({ data }) => {
                   <span class="card-title blue-text">Alfred</span>
                 </a>
                 <p>
-                  <strong>Description:</strong> A mobile app that facilitates
-                  doctor-patient communication. Patients can directly text their
-                  doctors and texts will show up on the doctor's end in an
-                  email-like interface. (Backend is finished, frontend is
-                  work-in-progress)
+                  <strong>Description:</strong> A mobile app (in development)
+                  that facilitates doctor-patient communication. Patients can
+                  directly text their doctors and texts will show up on the
+                  doctor's end in an email-like interface.
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> React Native, Firebase, Nodejs,
                   Nexmo API
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img
-                    class="materialboxed"
-                    src={givingLove}
-                    style={{ height: "200px" }}
-                  />
-                </div>
-                <div class="card-content">
-                  <a href="https://github.com/ghlai9665/givingLove/tree/b70b1fb6b8792bbad19f6c2bb53bb220471300f9">
-                    <span class="card-title blue-text">Giving Love</span>
-                  </a>
-                  <p>
-                    <strong>Description:</strong> A web app that lets you give
-                    whatever you want: love, positivity, fucks etc... But try to
-                    keep it positive and PG13 please :) .
-                  </p>
-                  <p>
-                    <strong>Tech Stack:</strong> Html, Css, Javascript
-                  </p>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                </div>
               </div>
             </div>
           </div>
@@ -216,9 +194,9 @@ const PortfolioPage = ({ data }) => {
                   </span>
                 </a>
                 <p>
-                  <strong>Description:</strong> A notebook that helps you take
-                  notes in Chinese. Whenever you enter Hanzi, the pinyin and
-                  definition automatically shows up.
+                  <strong>Description:</strong> A web app that allows notetaking
+                  in Chinese. Upon entering Hanzi, the corresponding Pinyin and
+                  definition automatically shows up and are saved to notebooks.
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Reactjs, Nodejs, Firebase, Google
