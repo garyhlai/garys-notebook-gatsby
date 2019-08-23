@@ -11,6 +11,7 @@ import youva from "../images/youvaHome.png";
 import shapeshift from "../images/shapeshift.png";
 import deepdream from "../images/deepdream.png";
 import chineseNotebook from "../images/myChineseNotebook.png";
+import rhymer from "../images/rhymer.png";
 //import Layout from "../components/layout";
 const methods = {
   componentDidMount() {
@@ -56,6 +57,9 @@ const PortfolioPage = ({ data }) => {
                 <p>
                   <strong>Tech Stack:</strong> Python
                 </p>
+                <br />
+                <br />
+                <br />
               </div>
             </div>
           </div>
@@ -84,6 +88,8 @@ const PortfolioPage = ({ data }) => {
                 <br />
                 <br />
                 <br />
+                <br />
+                <br />
               </div>
             </div>
           </div>
@@ -92,24 +98,24 @@ const PortfolioPage = ({ data }) => {
               <div class="card-image">
                 <img
                   class="materialboxed"
-                  src={shapeshift}
+                  src={rhymer}
                   style={{ height: "200px" }}
                 />
               </div>
               <div class="card-content">
-                <a href="https://github.com/ghlai9665/shapeshift-english">
-                  <span class="card-title blue-text">Shapeshift English</span>
+                <a href="http://ec2-18-191-151-183.us-east-2.compute.amazonaws.com:3000">
+                  <span class="card-title blue-text">Pocket-MC</span>
                 </a>
                 <p>
-                  <strong>Description:</strong> A website built for an English
-                  education startup in China. (Client self-substituted her own
-                  contents and links)
+                  <strong>Description:</strong> A rhymer that suggests rhymes by
+                  first querying the CMU pronouncing dictionary and then
+                  filtering relevant rhymes by word embedding similarity with a
+                  Word2Vec model. (Co-wrote the dictionary query part with a
+                  friend)
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Html, Css, Javascript
                 </p>
-                <br />
-                <br />
                 <br />
                 <br />
               </div>
@@ -224,6 +230,34 @@ const PortfolioPage = ({ data }) => {
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Reactjs, GraphQL, MongoDB
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  src={shapeshift}
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div class="card-content">
+                <a href="https://github.com/ghlai9665/shapeshift-english">
+                  <span class="card-title blue-text">Shapeshift English</span>
+                </a>
+                <p>
+                  <strong>Description:</strong> A website built for an English
+                  education startup in China. (Client self-substituted her own
+                  contents and links)
+                </p>
+                <p>
+                  <strong>Tech Stack:</strong> Html, Css, Javascript
                 </p>
                 <br />
                 <br />
