@@ -114,7 +114,7 @@ const PortfolioPage = ({ data }) => {
                   friend)
                 </p>
                 <p>
-                  <strong>Tech Stack:</strong> Html, Css, Javascript
+                  <strong>Tech Stack:</strong> Python, Nodejs, Reactjs
                 </p>
                 <br />
                 <br />
