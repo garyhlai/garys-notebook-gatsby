@@ -9,6 +9,7 @@ import lifecycle from "react-pure-lifecycle";
 import alfred from "../images/Alfred.png";
 import youva from "../images/youvaHome.png";
 import shapeshift from "../images/shapeshift.png";
+import deepdream from "../images/deepdream.png";
 import chineseNotebook from "../images/myChineseNotebook.png";
 //import Layout from "../components/layout";
 const methods = {
@@ -63,6 +64,34 @@ const PortfolioPage = ({ data }) => {
               <div class="card-image">
                 <img
                   class="materialboxed"
+                  src={deepdream}
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div class="card-content">
+                <a href="https://www.youtube.com/watch?v=sR8apqcw4uM">
+                  <span class="card-title blue-text">DeepDream</span>
+                </a>
+                <p>
+                  <strong>Description:</strong> An iteration of DeepDream on my
+                  company's logo - the idea is to maximize certain patterns in
+                  the image by performing gradient ascent on a specific
+                  activation layer of the neural network.
+                </p>
+                <p>
+                  <strong>Tech Stack:</strong> Python
+                </p>
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
                   src={shapeshift}
                   style={{ height: "200px" }}
                 />
@@ -79,36 +108,6 @@ const PortfolioPage = ({ data }) => {
                 <p>
                   <strong>Tech Stack:</strong> Html, Css, Javascript
                 </p>
-                <br />
-                <br />
-                <br />
-                <br />
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img
-                  class="materialboxed"
-                  src={workLog}
-                  style={{ height: "200px" }}
-                />
-              </div>
-              <div class="card-content">
-                <a href="https://github.com/ghlai9665/worklog">
-                  <span class="card-title blue-text">Sospiro</span>
-                </a>
-                <p>
-                  <strong>Description:</strong> A work log that logs progress
-                  against goals each day.
-                </p>
-                <p>
-                  <strong>Tech Stack:</strong> Reactjs, GraphQL, MongoDB
-                </p>
-                <br />
-                <br />
                 <br />
                 <br />
                 <br />
@@ -140,7 +139,6 @@ const PortfolioPage = ({ data }) => {
                 <p>
                   <strong>Tech Stack:</strong> Html, Css, Javascript, Bootstrap
                 </p>
-                <br />
                 <br />
                 <br />
                 <br />
@@ -206,7 +204,35 @@ const PortfolioPage = ({ data }) => {
             </div>
           </div>
         </div>
-
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  src={workLog}
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div class="card-content">
+                <a href="https://github.com/ghlai9665/worklog">
+                  <span class="card-title blue-text">Sospiro</span>
+                </a>
+                <p>
+                  <strong>Description:</strong> A work log that logs progress
+                  against goals each day.
+                </p>
+                <p>
+                  <strong>Tech Stack:</strong> Reactjs, GraphQL, MongoDB
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
         <br />
         <br />
         <Subscribe />

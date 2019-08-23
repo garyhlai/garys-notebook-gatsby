@@ -17,16 +17,13 @@ const AboutPage = ({ data }) => {
 
         <p>
           My name is Gary Haizhi Lai and I am an indie maker{" "}
-          <i class="em em-hammer_and_wrench" /> and a full-stack freelancer{" "}
-          <i class="em em-herb" /> interested in web/mobile dev, AI and
-          blockchain (contact me at <strong>glai9665@gmail.com</strong> for
-          work). I recently graduated from Columbia University in NYC (2019) and
-          set out to travel the world while working remotely.{" "}
+          <i class="em em-hammer_and_wrench" /> interested in AI and blockchain
+          (contact me at <strong>glai9665@gmail.com</strong> for work).
         </p>
 
         <p>
           I’m starting this blog here in order to share my notes on
-          miscellaneous programming and traveling topics as I come across them.{" "}
+          miscellaneous programming topics as I come across them.{" "}
           <i class="em em-nerd_face" /> By explaining things, I can understand
           them better while providing values to others. Meanwhile, I hope to
           connect with and learn from fellow programmers and travelers who find
