@@ -11,7 +11,7 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-remark-relative-images`,
+      resolve: `gatsby-remark-relative-images`
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
