@@ -6,7 +6,7 @@ author: "Gary Lai"
 tags: ["Gatsby", "Markdown"]
 ---
 
-Ok I spent the past 3 hours trying to find out this annoying little thing. Spoiler alert: You DON'T NEED any Gatsby plugins. Stop reading these lies.
+Ok I spent the past 3 hours trying to find out this annoying little thing. Spoiler alert: You DON'T NEED any Gatsby plugins. Stop reading these lies. (JK, some plugins allows you to enjoy Gatsby's image optimization feature, but unfortunately the documentation is too bad - I tried everything but nothing worked for me. Hence this original hack-y solution.)
 
 All you need:
 
@@ -14,6 +14,6 @@ All you need:
 
 2. Refer to your image in your markdown file by typing this:
 
-`![](./images/image_name.png)`
+`![](/images/image_name.png)`
 
 3. You need to commit your public folder. Run `git add -f /public/images` because usually your public folder is in git ignore
