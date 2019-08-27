@@ -75,7 +75,7 @@ Besides the cool psychedelic art it produces, DeepDream has actual utility - We 
 
 Here is a <u>[tutorial](https://pythonprogramming.net/deep-dream-python-playing-neural-network-tensorflow/)</u> on implementing DeepDream that I used in case you are interested. I am attaching here the result of my modified implementation of DeepDream on the logo of Cortex Labs (my company, which seeks to decentralize AI on the blockchain), partly to show you what is possible with DeepDream and partly to show you how DeepDream also has practical use for business marketing ;)
 
-The image below is a screenshot of the full video iteration, which you can view <u>[here](https://www.youtube.com/watch?v=sR8apqcw4uM)</u>. I had the neural network maximize the first hidden layer (edges) for 150 images (while keeping zooming in), then second hidden layer (circles) for the next 150 images and so on. I eventually strung these images together into a video using a Python script. My full code can see seen <u>[here](https://github.com/ghlai9665/deepdream)</u>.
+The image below is a screenshot of the full video iteration, which you can view <u>[here](https://www.youtube.com/watch?v=sR8apqcw4uM)</u>. I had the neural network maximize the first hidden layer (edges) for 150 images (while keeping zooming in), then second hidden layer (circles) for the next 150 images and so on. I eventually strung these images together into a video using a Python script. My full code can be seen <u>[here](https://github.com/ghlai9665/deepdream)</u>.
 
 ![](./images/20190826_1/cortex.jpg)<br />
 <sup>(As can be seen from the screenshot of the video, the lines and edges are very pronounced and the result is a cooler version of the original image)</sup>
