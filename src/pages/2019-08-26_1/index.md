@@ -8,16 +8,15 @@ tags: ["AI", "DeepLearning"]
 
 <img src="./images/20190826_1/ovejas.png" alt="Ovejas"/>
 
-DeepDream is one of the coolest applications of machine learning - it started out at Google as an effort to gain more insights into the blackbox of neural networks but surprisingly ended up making some wonderful abstract, psychedelic art. Although DeepDream is a few years old now, most articles on the subject have failed to give a satisfactory explanation of how exactly DeepDream works in an understandable manner - I will make another attempt now.
+DeepDream is one of the coolest applications of machine learning - it started out at Google as an effort to gain more insights into the blackbox of neural networks but surprisingly ended up making some wonderful abstract, psychedelic art. Although DeepDream is a few years old now, most articles on the supject have failed to give a satisfactory explanation of how exactly DeepDream works in an understandable manner - I will make another attempt now.
 
 ###What is DeepDream
 
 Basically, DeepDream takes an image as an input (e.g. a picture of the cloudy sky) and then outputs a dreamy image that looks like hallucinations (e.g. a cloudy sky with various funny patterns).
 
 ![](./images/20190826_1/skyarrow.png)
-![](./images/20190826_1/funny_animals.png)
-
-(Image Source: https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html)
+![](./images/20190826_1/funny_animals.png)<br/>
+<sup>(Image Source: https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html)</sup>
 
 The core idea is a beautiful and simple one. You just ask the neural network “what patterns do you see in this image? Now amplify it.”
 
@@ -43,19 +42,19 @@ There is a lot of math underlying neural networks which we will not go into, but
 
 As a simplified example, let’s say we input an image of a snake, if the hidden layer 1says "ah I see some edges and some curves", the hidden layer 2 might say “ah I see a triangle and two circles from those curves and edges”, then the hidden layer 3 may say “oh, the two circles are actually two eyes and the triangle is a head”, and eventually the output layer may decide that it is the head of a snake.
 
-![](./images/20190826_1/abstraction.jpg)
-(Image from Google image search, illustrating the abstraction that occurs when an image is passed through each layer of the neural network)
+![](./images/20190826_1/abstraction.jpg)<br/>
+<sup>(Image from Google image search, illustrating the abstraction that occurs when an image is passed through each layer of the neural network)</sup>
 
 Although this gives a general idea of what goes on when an image goes through each layer of a neural network, the truth is, even the top researchers around the world do not yet understand what exactly goes on in each of the neurons in a neural network. As an effort to peek into this blackbox of neural network, a team at Google designed a technique called Inceptionism, also known as DeepDream, which I explain below. See the original blog post here.
 
-DeepDream
+####DeepDream
 
 As I stated earlier in this article, the core idea of DeepDream is to ask the network “what patterns do you see in the image, now amplify it.” In practice, this means that you try to maximize the activation functions of a certain layer or neuron by changing the input picture.
 Recall that different layers represent different levels of abstractions. The bigger the activation functions of a certain layer, the more pronounced those abstractions will appear in the final image.
 For example, let’s take a look at this image below:
 
-![](./images/20190826_1/bird.jpg)
-(Image from https://deepdreamgenerator.com)
+![](./images/20190826_1/bird.jpg)<br />
+<sup>(Image from https://deepdreamgenerator.com)</sup>
 
 When given the original input image of a bird, the neural network tries to identify different patterns in the image in order to determine what the image is - let’s say the activation functions of layer 2 of the neural network may see like 0.2 edges, while activation functions of layer 3 may see 0.4 circles in the image etc.
 
@@ -72,12 +71,13 @@ Whereas an optimization such as gradient descent is usually performed in order t
 
 Besides the cool psychedelic art it produces, DeepDream has actual utility - We can now peek into the blackbox of the neural network and debug. For example, the team at Google discovered via DeepDream that a neural network trained to recognize dumbbells manifested a lot of arms upon maximizing a certain layer, exposing the bias in the training data - that is, the training images probably contained too many photos of dumbbells when they are being lifted, so the model was not as good at recognizing dumbbells without an arm.
 
-An Implementation of DeepDream
+###An Implementation of DeepDream
 
 Here is a tutorial on implementing DeepDream that I used in case you are interested. I am attaching here the result of my modified implementation of DeepDream on the logo of Cortex Labs (my company, which seeks to decentralize AI on the blockchain), partly to show you what is possible with DeepDream and partly to show you how DeepDream also has practical use for business marketing ;)
+
 The image below is a screenshot of the full video iteration, which you can view here. I had the neural network maximize the first hidden layer (edges) for 150 images (while keeping zooming in), then second hidden layer (circles) for the next 150 images and so on. I eventually strung these images together into a video using a Python script.
 
 ![](./images/20190826_1/cortex.jpg)<br />
-<sub>(As can be seen from the screenshot of the video, the lines and edges are very pronounced and the result is a cooler version of the original image)</sub>
+<sup>(As can be seen from the screenshot of the video, the lines and edges are very pronounced and the result is a cooler version of the original image)</sup>
 
 Hope you have a clearer understanding of DeepDream now. Go make some cool arts yourself!
