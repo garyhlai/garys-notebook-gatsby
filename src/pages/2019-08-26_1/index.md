@@ -6,7 +6,7 @@ author: "Gary Lai"
 tags: ["AI", "DeepLearning"]
 ---
 
-<img src="./images/20190826_1/ovejas.png" alt="Ovejas"/>
+<img src="/images/20190826_1/ovejas.png" alt="Ovejas"/>
 
 DeepDream is one of the coolest applications of machine learning - it started out at Google as an effort to gain more insights into the blackbox of neural networks but surprisingly ended up making some wonderful abstract, psychedelic art. Although DeepDream is a few years old now, most articles on the supject have failed to give a satisfactory explanation of how exactly DeepDream works in an understandable manner - I will make another attempt now.
 
