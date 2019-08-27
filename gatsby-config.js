@@ -10,6 +10,9 @@ module.exports = {
         trackingId: "UA-146500156-1"
       }
     },
+    {
+      resolve: `gatsby-remark-relative-images`,
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-catch-links",
