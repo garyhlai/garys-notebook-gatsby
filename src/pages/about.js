@@ -17,8 +17,8 @@ const AboutPage = ({ data }) => {
 
         <p>
           My name is Gary Haizhi Lai and I am an indie maker{" "}
-          <i class="em em-hammer_and_wrench" /> interested in AI and blockchain
-          (contact me at <strong>glai9665@gmail.com</strong> for work).
+          <i class="em em-hammer_and_wrench" /> interested in machine learning
+          and blockchain.
         </p>
 
         <p>
