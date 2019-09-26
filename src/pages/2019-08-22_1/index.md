@@ -3,7 +3,7 @@ path: "/20190822_1"
 date: "2019-08-22"
 title: "Making Sense of AI on Blockchain: Part 2"
 author: "Gary Lai"
-tags: ["AI", "Blockchain"]
+tags: ["AI", "Machinelearning", "Blockchain"]
 ---
 
 In the first article of this series, I introduced the lifecycle of AI (which consists of training and inference) and discussed blockchain use cases for AI inferences. If you are not familiar with what these terms mean, I suggest reading my first article before this one.

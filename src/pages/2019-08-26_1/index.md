@@ -3,7 +3,7 @@ path: "/20190826_1"
 date: "2019-08-26"
 title: "DeepDream Explained Clearly"
 author: "Gary Lai"
-tags: ["AI", "DeepLearning"]
+tags: ["AI", "Deeplearning", "Machinelearning"]
 ---
 
 <img src="/images/20190826_1/ovejas.png" alt="Ovejas"/>

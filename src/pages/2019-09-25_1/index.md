@@ -3,7 +3,7 @@ path: "/20190925_2"
 date: "2019-09-25"
 title: "Statistics: P-value Explained"
 author: "Gary Lai"
-tags: ["Statistics", "MachineLearning"]
+tags: ["Statistics", "Machinelearning"]
 ---
 
 **Informal Definition:** The probability of getting the same distribution if the null hypothesis were true.

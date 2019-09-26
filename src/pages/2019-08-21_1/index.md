@@ -3,7 +3,7 @@ path: "/20190821_1"
 date: "2019-08-21"
 title: "Making Sense of AI on Blockchain: Part 1"
 author: "Gary Lai"
-tags: ["AI", "Blockchain"]
+tags: ["AI", "Blockchain", "Machinelearning"]
 ---
 
 Any projects that involve both AI and Blockchain are bound to raise some eyebrows — after all, putting together two hottest buzzwords of the day sounds like nothing but some cheap marketing soup. It also doesn’t help that many articles on the convergence of AI and blockchain are filled with big words with no real substance. However, it is important to keep an open mind and examine with objectivity the real use cases of blockchain for AI.
