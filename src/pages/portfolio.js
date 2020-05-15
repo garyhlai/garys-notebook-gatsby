@@ -12,12 +12,13 @@ import shapeshift from "../images/shapeshift.png";
 import deepdream from "../images/deepdream.png";
 import chineseNotebook from "../images/myChineseNotebook.png";
 import rhymer from "../images/rhymer.png";
+import chord from "../images/chord.png";
 //import Layout from "../components/layout";
 const methods = {
   componentDidMount() {
     var elems = document.querySelectorAll(".materialboxed");
     var instances = window.M.Materialbox.init(elems);
-  }
+  },
 };
 
 const PortfolioPage = ({ data }) => {
@@ -34,6 +35,32 @@ const PortfolioPage = ({ data }) => {
           <br />
         </h2>
         <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  src={chord}
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div class="card-content">
+                <a href="https://github.com/ghlai9665/chord-suggestor">
+                  <span class="card-title blue-text">Chord Suggestor</span>
+                </a>
+                <p>
+                  <strong>Description:</strong>Given an input sequence of
+                  chords, the LSTM model suggests the most likely next chords
+                  for songwriters. The current version is trained with only Jay
+                  Chou songs (scraped from web) and represents chords as one-hot
+                  vectors but will soon explore learning “chord embeddings”.
+                </p>
+                <p>
+                  <strong>Tech Stack:</strong> Keras, Python, Flask
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
@@ -93,6 +120,8 @@ const PortfolioPage = ({ data }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div class="row">
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
@@ -116,13 +145,10 @@ const PortfolioPage = ({ data }) => {
                 <p>
                   <strong>Tech Stack:</strong> Python, Nodejs, Reactjs
                 </p>
-                <br />
-                <br />
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
+
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
@@ -150,32 +176,6 @@ const PortfolioPage = ({ data }) => {
                 <br />
                 <br />
                 <br />
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img
-                  class="materialboxed"
-                  src={alfred}
-                  style={{ height: "200px" }}
-                />
-              </div>
-              <div class="card-content">
-                <a href="https://github.com/ghlai9665/alfredo">
-                  <span class="card-title blue-text">Alfred</span>
-                </a>
-                <p>
-                  <strong>Description:</strong> A mobile app (in development)
-                  that facilitates doctor-patient communication. Patients can
-                  directly text their doctors and texts will show up on the
-                  doctor's end in an email-like interface.
-                </p>
-                <p>
-                  <strong>Tech Stack:</strong> React Native, Firebase, Nodejs,
-                  Nexmo API
-                </p>
               </div>
             </div>
           </div>
@@ -211,6 +211,33 @@ const PortfolioPage = ({ data }) => {
           </div>
         </div>
         <div class="row">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="materialboxed"
+                  src={alfred}
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div class="card-content">
+                <a href="https://github.com/ghlai9665/alfredo">
+                  <span class="card-title blue-text">Alfred</span>
+                </a>
+                <p>
+                  <strong>Description:</strong> A mobile app (in development)
+                  that facilitates doctor-patient communication. Patients can
+                  directly text their doctors and texts will show up on the
+                  doctor's end in an email-like interface.
+                </p>
+                <p>
+                  <strong>Tech Stack:</strong> React Native, Firebase, Nodejs,
+                  Nexmo API
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div class="col s12 m4">
             <div class="card">
               <div class="card-image">
