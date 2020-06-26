@@ -76,10 +76,10 @@ const PortfolioPage = ({ data }) => {
                 </a>
                 <p>
                   <strong>Description:</strong> A python script that compresses
-                  images by more than 1000% (compression rate exceeds most
-                  online image compressors). Solved the problem of slow loading
-                  for a client who needed a website that required the display of
-                  many photos.
+                  images by more than 100% (compression rate exceeds most online
+                  image compressors). Solved the problem of slow loading for a
+                  client who needed a website that required the display of many
+                  photos.
                 </p>
                 <p>
                   <strong>Tech Stack:</strong> Python
