@@ -6,11 +6,11 @@ author: "Gary Lai"
 tags: ["Machinelearning", "Statistics"]
 ---
 
-<p style="margin-left: 3%; margin-right: 3%; margin-bottom: 5%; margin-top: 3%;"><i>Recently, I have been reading a lot of machine learning papers and thought I would start sharing my notes to (1) back up my notes (2) share my digestion of these papers which might help other people understand.</i></p>
+<p style="margin-left: 3%; margin-right: 3%; margin-bottom: 5%; margin-top: 3%;"><i>Recently, I have been reading a lot of machine learning papers and thought I would start sharing my notes to (1) back up my notes (2) share my digestion of these papers which might help other people understand. Please refer to the actual paper for details as I only sketch the main ideas here.</i></p>
 
-**Title:** Distilling the knowledge in a neural network (2015), G. Hinton et al.
+**Title:** <u>[Distilling the Knowledge in a Neural Network](https://arxiv.org/pdf/1503.02531.pdf)</u> (2015), G. Hinton et al.
 
-**Summary**:
+**Main Ideas**:
 
 This classic paper by Hinton et al. describes a model compression technique with teacher-student networks.
 
