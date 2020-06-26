@@ -12,7 +12,7 @@ tags: ["Machinelearning", "Statistics"]
 
 **Summary**:
 
-The classic paper by Hinton et al. describes a model compression technique with teacher-student networks.
+This classic paper by Hinton et al. describes a model compression technique with teacher-student networks.
 
 While an ensemble of large models can achieve optimal performance on the training set, its inference is too slow and expensive during production time. We can, however, train a smaller (student) network to learn the softmax output of this larger (teacher) network and thereby to generalize in the same way as the teacher network - this is because the softmax carries “dark knowledge”, or nuanced information about e.g. while the input image is neither 3 nor 7, it is much more similar to 3. The student network is then used for inference during production time.
 
