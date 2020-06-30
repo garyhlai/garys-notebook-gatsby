@@ -3,7 +3,7 @@ path: "/20200625_1"
 date: "2020-06-25"
 title: "ML Paper Notes: Distilling the Knowledge in a Neural Network"
 author: "Gary Lai"
-tags: ["Machinelearning", "Statistics"]
+tags: ["Machinelearning", "Transferlearning"]
 ---
 
 <p style="margin-left: 3%; margin-right: 3%; margin-bottom: 5%; margin-top: 3%;"><i>Recently, I have been reading a lot of machine learning papers and thought I would start sharing my notes to (1) back up my notes (2) share my digestion of these papers which might help other people understand. Please refer to the actual paper for details as I only sketch the main ideas here.</i></p>
