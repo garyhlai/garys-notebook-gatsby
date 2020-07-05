@@ -1,17 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: "Gary's Notebook"
+    title: "Gary's Notebook",
+    siteUrl: `https://www.garysnotebook.com`,
+    description: `Notes on machine learning, programming and math etc.`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-146500156-1"
-      }
+        trackingId: "UA-146500156-1",
+      },
     },
     {
-      resolve: `gatsby-remark-relative-images`
+      resolve: `gatsby-remark-relative-images`,
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",
@@ -20,8 +22,8 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages"
-      }
+        name: "pages",
+      },
     },
     "gatsby-transformer-remark",
     /*{
@@ -68,11 +70,11 @@ module.exports = {
               showLineNumbers: false,
               // If setting this to true, the parser won't handle and highlight inline
               // code used in markdown i.e. single backtick code like `this`.
-              noInlineHighlight: false
-            }
-          }
-        ]
-      }
-    }
-  ]
+              noInlineHighlight: false,
+            },
+          },
+        ],
+      },
+    },
+  ],
 };

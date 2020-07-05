@@ -1,5 +1,5 @@
 import React from "react";
-//import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 import Subscribe from "../components/subscribe";
@@ -9,8 +9,14 @@ import kebabCase from "lodash/kebabCase";
 const IndexPage = ({ data }) => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Gary's Notebook</title>
+        <link rel="canonical" href="https://www.garysnotebook.com" />
+      </Helmet>
+
       <Layout>
-        {data.allMarkdownRemark.edges.map(post => (
+        {data.allMarkdownRemark.edges.map((post) => (
           <div key={post.node.id}>
             <h3>
               <Link to={post.node.frontmatter.path}>
@@ -19,7 +25,7 @@ const IndexPage = ({ data }) => {
             </h3>
             <p>{post.node.excerpt}</p>
 
-            {post.node.frontmatter.tags.map(tag => (
+            {post.node.frontmatter.tags.map((tag) => (
               <div class="chip">
                 <Link to={`/tags/${tag.toLowerCase()}/`}>{tag}</Link>
               </div>
