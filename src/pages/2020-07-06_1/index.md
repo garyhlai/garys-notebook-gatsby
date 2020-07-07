@@ -138,6 +138,8 @@ Matches any alphanumeric character; this is equivalent to the class [a-zA-Z0-9_]
 Matches any non-alphanumeric character; this is equivalent to the class [^a-za-z0-9_].
 ```
 
+<br />
+
 ## <u>re.escape</u>
 
 When I was first reading about re.escape, I struggled a bit because the word “escape” didn’t make sense to me — it simply means **make a special character not special anymore.**
