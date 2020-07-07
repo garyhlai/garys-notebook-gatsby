@@ -6,11 +6,11 @@ author: "Gary Lai"
 tags: ["Python", "MachineLearning"]
 ---
 
-Re, or Regex, stands for regular expression means "a sequence of characters that define a search pattern." <sup>1</sup> It is particularly useful for text-processing tasks such as search and replace. Chances are you will need it at some point if you deal a lot with text-based datasets. In Python, regular expression is implemented in the library Re.
+Re, or Regex, stands for regular expression, which means "a sequence of characters that define a search pattern."<sup>1</sup> It is particularly useful for text-processing tasks such as search and replace. Chances are you will need it at some point if you deal a lot with text-based datasets. In Python, regular expression is implemented in the library Re.
 
-Now, Python has pretty good official [documentation](https://docs.python.org/3/library/re.html) and [tutorial](https://docs.python.org/3/howto/regex.html) on this topic, but I personally didn't find them to be pedagogical enough. Therefore, I introduce some of the most important concepts here, so that you can get started quickly with Re in Python.
+Python has pretty good official <u>[documentation](https://docs.python.org/3/library/re.html)</u> and <u>[tutorial](https://docs.python.org/3/howto/regex.html)</u> on this topic, but I personally didn't find them to be pedagogical enough. Therefore, I introduce some of the most important concepts here, so that you can get started quickly with Re in Python.
 
-You can then refer to the official documentation to learn what you need specifically for your use case down the line.
+After this tutorial, you can then refer to the official documentation to learn what you need specifically for your use case down the line.
 
 Now open your Terminal, type in `python3` to start Python, follow along and experiment for yourself to truly understand what each of these methods do.
 
@@ -65,19 +65,19 @@ Let's look at a few important ones - you can refer the [documentation](https://d
 [ ] lets you match a class of characters - i.e. when you specify the pattern as [abc] (or equivalently, [a-c]) the search will stop when you find any of the characters in the [ ] (‘a', ‘b’ or ‘c’ in this case).
 
 ```python
->>> match = re.search("[abc]", r"xybz")
+>>> match = re.search("[abc]", "xybz")
 >>> print(match)
 <re.Match object; span=(2, 3), match='b'>
 
->>> match = re.search("[a-c]", r"xbyz")
+>>> match = re.search("[a-c]", "xbyz")
 >>> print(match)
 <re.Match object; span=(1, 2), match='b'>
 ```
 
-If you specify ^ as the first character inside of [ ], you complement/invert the character class - i.e. if you specify [^abc], the pattern will match any character that is NOT ‘a' ‘b' or ‘c’.
+If you specify ^ as the first character inside of [ ], you complement/invert the character class - i.e. if you specify [\^abc], the pattern will match any character that is NOT ‘a' ‘b' or ‘c’.
 
 ```python
->>> match = re.search("[^abc]", r"abcxb")
+>>> match = re.search("[^abc]", "abcxb")
 >>> print(match)
 <re.Match object; span=(3, 4), match='x’>
 ```
@@ -140,14 +140,14 @@ Matches any non-alphanumeric character; this is equivalent to the class [^a-za-z
 
 ## <u>re.escape</u>
 
-When I was first reading about re.escape, I struggled a bit because the word “escape” didn’t make sense to me — it just means **make a special character not special anymore.**
+When I was first reading about re.escape, I struggled a bit because the word “escape” didn’t make sense to me — it simply means **make a special character not special anymore.**
 
 ```python
 s = “ab\tc”
 print(s) # this will return “ab    c"
 ```
 
-What happens under the hood is that whenever Python sees `\t` or other special characters, it will replace `\t` with a character that represents tab; however, sometimes we want the string to literally have `\t`, instead of the tab - this is when we need to "escape". The common strategy to “escape” a special character is to backslash \ it.
+What happens under the hood is that whenever Python sees `\t` or other special characters, it will replace `\t` with a character that represents tab; however, sometimes we want the string to literally have `"\t"`, instead of the tab - this is when we need to "escape". The common strategy to “escape” a special character is to backslash \ it.
 
 ```python
 s = “ab\\tc”
@@ -162,6 +162,8 @@ When we run <u>[`re.escape`](https://docs.python.org/3/library/re.html#re.escape
 >>> print(re.escape('http://www.python.org'))
 http://www\.python\.org
 ```
+
+<br />
 
 ## <u>re.compile</u>
 
@@ -189,6 +191,7 @@ An intuitive way to think about this syntax is that you essentially take the fir
 
 # re.sub(pattern, repl, string) —> pattern.sub(repl, string)
 # original syntax -> with re.compile object pattern
+# this function will find the pattern in the string and substitute it with repl
 
 >>> pat = re.compile("y") # pat is the pattern object
 >>> rep = pat.sub("a","xyz")
@@ -197,8 +200,9 @@ xaz
 ```
 
 <br />
-Hopefully, by now you have a basic understanding of Re to delve further. Obviously this article chooses clarity over formality - to get more details, head to the official [documentation](https://docs.python.org/3/library/re.html#re.sub)!
 
-Footnotes
+Hopefully, by now you have a basic understanding of Re to delve further. If some details don't make sense, it helps to just experiment with the code. This article chooses clarity over formality - to get more details, head to the official <u>[documentation](https://docs.python.org/3/library/re.html#re.sub)!</u>
+
+### Footnotes
 
 1. Wikipedia contributors, "Regular expression," Wikipedia, The Free Encyclopedia, https://en.wikipedia.org/w/index.php?title=Regular_expression&oldid=963870282 (accessed July 7, 2020).
