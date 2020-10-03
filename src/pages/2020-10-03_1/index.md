@@ -50,4 +50,4 @@ Thus, masking helps prevent the decoder from cheating by paying all of the atten
 
 ### Footnotes
 
-1. Note that this changes a bit when you're using <u>[scheduled sampling](https://www.garysnotebook.com/20200630_1)</u>, where you use a mix of actual previous words and predicted previous words during training.
+1. Note that this changes a bit when you're using <u>[scheduled sampling](https://www.garysnotebook.com/20200630_1)</u>, where you use a mix of actual previous words and predicted previous words during training. My guess is that you can't directly apply scheduled sampling to Transformers because scheduled sampling relies on some words being predicted earlier than others (in order to use them as the input) but Transformers compute the predictions for every word in a sentence in parallel.
