@@ -25,7 +25,7 @@ The network behaves slightly differently in the training stage (which caused muc
 
 Let's say the training sentence pair is < "hello world", "bonjour le monde" >. Our decoder, after reading the hidden state vector generated from the encoder which reads "hello world", predicts a softmax vector that gives the highest probability to "au revoir", which differs from the actual translation of "bonjour". The next step in the recurrence **will not** use "au revoir" (predicted previous word) as its input at all; instead it will use "bonjour" (actual previous word). The network inputs the **actual previous word** instead of the **predicted previous word** into the next step because recall that now (at the training stage), the network has access to the answer (the actual words).
 
-If you think about it, each step of the decoder doesn't really know anything about the **softmax predictions** made in the steps before it (even though those predictions are compared to the actual words to compute the loss for backpropagation); it only knows what the **actual word** is before it. Try to convince yourself that this is true, as this insight was what made it all click for me.
+If you think about it, each step of the decoder doesn't really know anything about the **softmax predictions** made in the steps before it (even though those predictions are compared to the actual words to compute the loss for backpropagation)<sup>1</sup>; it only knows what the **actual word** is before it. Try to convince yourself that this is true, as this insight was what made it all click for me.
 
 OK, enough review. Enter the Transformer.
 
@@ -47,3 +47,7 @@ OK, so similar to RNN, during the decoding phase of the Transformer, at each ste
 This is why we need to apply masking - we don't want each word in the decoder to see the words that come after it. The way we do that is by setting the attention paid to the subsequent words to 0. The paper describes this as setting the scaled dot-product attention to −∞, which essentially makes the attention weight (a softmax vector) 0, because e^(−∞) = 0.
 
 Thus, masking helps prevent the decoder from cheating by paying all of the attention to the immediate next word and allow the Transformer's full advantages to take effect!
+
+### Footnotes
+
+1. Note that this changes a bit when you're using <u>[scheduled sampling](https://www.garysnotebook.com/20200630_1)</u>, where you use a mix of actual previous words and predicted previous words during training.
