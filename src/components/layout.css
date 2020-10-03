@@ -226,6 +226,17 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+center {
+  display: block;
+  margin: 0 auto;
+}
+
 h1 {
   margin-left: 0;
   margin-right: 0;
