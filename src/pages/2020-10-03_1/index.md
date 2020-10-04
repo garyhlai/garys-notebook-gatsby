@@ -1,7 +1,7 @@
 ---
 path: "/20201003_1"
 date: "2020-10-03"
-title: "Transformer Masking Explained"
+title: "Masking in the Transformer Explained"
 author: "Gary Lai"
 tags: ["Machinelearning", "Python"]
 ---
