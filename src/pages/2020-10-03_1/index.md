@@ -44,10 +44,12 @@ I won't go into much detail here but the Transformer can be thought of a set fun
 
 OK, so similar to RNN, during the decoding phase of the Transformer, at each step, we want the network to take a look at the actual French words previous to that step and output a softmax prediction for what it thinks the next word is. In RNN, the network does this sequentially, word by word, it looks at "le" and the activation accumulated from all of the previous French words, in order to output the softmax prediction. However, the Transformer attends to **every word** in the sentence, before and after, so here at the 3rd step, it will see the entire sentence: "bonjour", "le", "monde". It becomes trivial for the network to predict the next word - it will simply learn to put 100% attention to the word after it. But this is cheating, it won't learn anything really, because during **inference**, it won't have the answer (the entire French sentence) available to it and it'll be useless.
 
-This is why we need to apply masking - we don't want each word in the decoder to see the words that come after it. The way we do that is by setting the attention paid to the subsequent words to 0. The paper describes this as setting the scaled dot-product attention to −∞, which essentially makes the attention weight (a softmax vector) 0, because e^(−∞) = 0.
+This is why we need to apply masking<sup>2</sup> - we don't want each word in the decoder to see the words that come after it. The way we do that is by setting the attention paid to the subsequent words to 0. The paper describes this as setting the scaled dot-product attention to −∞, which essentially makes the attention weight (a softmax vector) 0, because e^(−∞) = 0.
 
 Thus, masking helps prevent the decoder from cheating by paying all of the attention to the immediate next word and allow the Transformer's full advantages to take effect!
 
 ### Footnotes
 
 1. Note that this changes a bit when you're using <u>[scheduled sampling](https://www.garysnotebook.com/20200630_1)</u>, where you use a mix of actual previous words and predicted previous words during training. My guess is that you can't directly apply scheduled sampling to Transformers because scheduled sampling relies on some words being predicted earlier than others (in order to use them as the input) but Transformers compute the predictions for every word in a sentence in parallel.
+
+2. Masking is **only** applied to the decoder, not the encoder.
