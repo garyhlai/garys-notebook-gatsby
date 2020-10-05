@@ -6,13 +6,13 @@ author: "Gary Lai"
 tags: ["Machinelearning", "Python", "NLP"]
 ---
 
-BPE (byte-pair encoding) is a good way (alternative to schemes such as one-hot encoding and Word2Vec pre-trained embeddings) to encode words for NLP model training. It is particularly good at discovering the relationships between words of the same stem (common subword). For example, "low", "lower", "lowest" are three orthogonal/unrelated words in one-hot encoding but related in BPE if "low" is recognized as the common subword. I will now present the algorithm with a quick intro and then heavily commented code, taken from the original [paper](https://arxiv.org/abs/1508.07909). I would recommend going through the code line-by-line, printing out examples for yourself to really understand what's going on.
+BPE (byte-pair encoding) is a good way (alternative to schemes such as one-hot encoding and Word2Vec pre-trained embeddings) to encode words for NLP model training. It is particularly good at discovering the relationships between words of the same stem (common subword). For example, "low", "lower", "lowest" are three orthogonal/unrelated words in one-hot encoding but related in BPE if "low" is recognized as the common subword. I will now present the algorithm with a quick intro and then heavily commented code, taken from the original <u>[paper](https://arxiv.org/abs/1508.07909)</u>. I would recommend going through the code line-by-line, printing out examples for yourself to really understand what's going on.
 
 The algorithm will:
 
 (1) split all the words into characters, separated by whitespace.
 
-(2) It will then iterate over all the possible pairs, get the most frequent pair (get_stats) and merge it (merge_vocab).
+(2) It will then iterate over all the possible pairs, get the most frequent pair (`get_stats`) and merge it (`merge_vocab`).
 
 e.g. (l o w e s t </w>) --> (l o w es t </w>)
 
