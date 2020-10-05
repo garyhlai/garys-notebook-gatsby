@@ -3,7 +3,7 @@ path: "/20201003_1"
 date: "2020-10-03"
 title: "Masking in the Transformer Explained"
 author: "Gary Lai"
-tags: ["Machinelearning", "Python"]
+tags: ["Machinelearning", "Python", "NLP"]
 ---
 
 The <u>[Transformer](https://arxiv.org/abs/1706.03762)</u> is a landmark breakthrough in NLP that is explained quite well by Jay Alammar's article <u>[The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)</u>. This article is about masking, a very specific component of the Transformer that I was extremely confused about when I was first learning it.
