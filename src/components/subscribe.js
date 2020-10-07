@@ -11,19 +11,19 @@ export default class Subscribe extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    /*
-    addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
-      .then(data => {
+
+    /*addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
+      .then((data) => {
         // I recommend setting data to React state
         // but you can do whatever you want (including ignoring this `then()` altogether)
 
         this.setState({
           message: "Success, you have been subscribed to the mailing list!",
-          email: ""
+          email: "",
         });
         console.log(this.state.message);
-      });
-*/
+      });*/
+
     //this.setState(e.target.value);
     //console.log(this.state.email);
   }
@@ -62,15 +62,28 @@ export default class Subscribe extends Component {
           </button>
         </form>
         <p class="green-text">{this.state.message}</p>
-        <a
-          href="https://twitter.com/gary_doesnt_lai"
-          className="tooltipped btn-floating btn-small grey darken-4"
-          data-tooltip="Twitter"
-          data-position="top"
-        >
-          <i class="fab fa-twitter" />
-        </a>
-        <a
+        <div>
+          <a
+            href="mailto:hl2936@columbia.edu"
+            className="tooltipped btn-floating btn-small grey darken-4"
+            data-tooltip="Email Me"
+            data-position="top"
+            style={{ color: "inherit" }}
+          >
+            <i class="material-icons right">mail</i>
+          </a>
+
+          <a
+            href="https://twitter.com/gary_doesnt_lai"
+            className="tooltipped btn-floating btn-small grey darken-4"
+            data-tooltip="Twitter"
+            data-position="top"
+          >
+            <i class="fab fa-twitter" />
+          </a>
+        </div>
+
+        {/* <a
           href="https://medium.com/@garylai_34633"
           className="tooltipped btn-floating btn-small grey darken-4"
           data-tooltip="Medium"
@@ -85,7 +98,7 @@ export default class Subscribe extends Component {
           data-position="top"
         >
           <i class="fab fa-instagram" />
-        </a>
+        </a> */}
       </div>
     );
   }
