@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import addToMailchimp from "gatsby-plugin-mailchimp";
+import addToMailchimp from "gatsby-plugin-mailchimp";
 
 export default class Subscribe extends Component {
   constructor(props) {
@@ -12,20 +12,18 @@ export default class Subscribe extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    /*addToMailchimp(this.state.email) // listFields are optional if you are only capturing the email address.
+    addToMailchimp(this.state.email, {}) // listFields are optional if you are only capturing the email address.
       .then((data) => {
         // I recommend setting data to React state
         // but you can do whatever you want (including ignoring this `then()` altogether)
 
         this.setState({
-          message: "Success, you have been subscribed to the mailing list!",
+          message: data.msg,
           email: "",
+          // message: "Success, you have been subscribed to the mailing list!",
+          // email: "",
         });
-        console.log(this.state.message);
-      });*/
-
-    //this.setState(e.target.value);
-    //console.log(this.state.email);
+      });
   }
 
   handleChange(event) {
@@ -36,7 +34,6 @@ export default class Subscribe extends Component {
     var elems = document.querySelectorAll(".tooltipped");
     const M = window.M;
     var instances = M.Tooltip.init(elems);
-    console.log("new script was loaded");
   }
 
   render() {
@@ -51,7 +48,6 @@ export default class Subscribe extends Component {
             placeholder="Enter your email address"
             onChange={this.handleChange}
           />
-
           <button
             class="btn waves-effect waves-light grey darken-4"
             type="submit"

@@ -12,11 +12,12 @@
     "gatsby-image": "^2.2.14",
     "gatsby-plugin-catch-links": "^2.1.5",
     "gatsby-plugin-google-analytics": "^2.1.11",
+    "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-manifest": "^2.2.9",
     "gatsby-plugin-mdx": "^1.0.33",
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.5",
-    "gatsby-plugin-sharp": "^2.2.18",
+    "gatsby-plugin-sharp": "^2.2.25",
     "gatsby-remark-copy-images": "^0.2.1",
     "gatsby-remark-copy-linked-files": "^2.1.13",
     "gatsby-remark-images": "^3.1.19",
@@ -34,8 +35,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "react-pure-lifecycle": "^3.0.0",
-    "sharp": "^0.23.0"
+    "react-pure-lifecycle": "^3.0.0"
   },
   "keywords": [
     "gatsby"

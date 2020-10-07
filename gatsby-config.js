@@ -26,13 +26,14 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
-    /*{
+    {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint:
-          "https://garysnotebook.us20.list-manage.com/subscribe/post?u=6779237f2083553bebfc861de&amp;id=67883bced5" // see instructions section below
-      }
-    },*/
+          "https://garysnotebook.us20.list-manage.com/subscribe/post?u=6779237f2083553bebfc861de&amp;id=67883bced5",
+        timeout: 3500,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
