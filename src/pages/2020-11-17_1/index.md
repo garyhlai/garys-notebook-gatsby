@@ -89,3 +89,5 @@ print(p["age"])  # prints 24
 ```
 
 We can now access values in Person objects via p[keys] because we have the `__getitem__` defined!
+
+In conclusion, **double score functions teach Python what do to if they see things like `object[key]`, `print(object)` or `object_a + object_b`**!
