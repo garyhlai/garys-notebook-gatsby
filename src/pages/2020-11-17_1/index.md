@@ -53,9 +53,13 @@ num = CrazyNumber(10)
 print(num) # prints 10
 ```
 
-The magic method that initially caught my attention in the PyTorch code was `__getitems__`, which is how you access lists/dictionaries via keys in Python. When you have a list and you call `my_list[8]`, under the hood, Python is calling the built-in `__getitems__` of lists. Just like above, you can also override it. Let's look at another example.
+Let's look at another example.
 
-This snippet below would return error "TypeError: 'Person' object is not subscriptable", because unlike lists and dictionaries, regular objects don't have default `__getitems__` defined.
+The magic method that initially caught my attention in the PyTorch code was `__getitems__`, which is how you access lists/dictionaries via keys in Python. When you have a list and you call `my_list[8]`, under the hood, Python is calling the built-in `__getitems__` of lists.
+
+Like the magic methods we saw above, you can also define `__getitems__` explicitly for your class - this would override the default method (like above with `__str__`), or supply it to Python if the class doesn't already have it (like you will soon see).
+
+This snippet below would return error "TypeError: 'Person' object is not subscriptable", because unlike lists and dictionaries, regular objects don't have `__getitems__` defined.
 
 #### Example 2
 
