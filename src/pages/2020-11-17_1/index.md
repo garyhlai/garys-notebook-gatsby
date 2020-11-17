@@ -70,7 +70,7 @@ class Person:
         self.age = age
 
 p = Person("Gary", 24)
-print(p["age"])  # error because
+print(p["age"])  # error
 ```
 
 Now we define it.
@@ -90,4 +90,4 @@ print(p["age"])  # prints 24
 
 We can now access values in Person objects via p[keys] because we have the `__getitem__` defined!
 
-In conclusion, **double score functions teach Python what do to if they see things like `object[key]`, `print(object)` or `object_a + object_b`**!
+In conclusion, **double score functions teach Python what do to if they see things like** `object[key]`, `print(object)` **or** `object_a + object_b`!
