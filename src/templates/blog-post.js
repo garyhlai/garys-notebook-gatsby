@@ -18,7 +18,7 @@ export default function Template({ data }) {
         <small>Posted on {post.frontmatter.date}</small>
         <br />
         <br />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="blog-post" dangerouslySetInnerHTML={{ __html: post.html }} />
         <br />
         <br />
         <br />
