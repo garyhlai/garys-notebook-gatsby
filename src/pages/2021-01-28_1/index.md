@@ -36,6 +36,17 @@ Let's picture your score tensor as a sheet of paper with grids.
 
 **The mask should have the exact shape** of your score tensor (or at least broadcastable); picture it like another piece of sheet of paper.
 
+You score tensor is a square matrix whose side is equal to the sentence length. It would look something like this:
+
+|     | x1  | x2  | x3  | x4  |  x5 |
+| :-- | :-: | :-: | :-: | :-: | --: |
+| x1  | 0.2 | 0.4 | 0.1 | 0.1 | 0.2 |
+| x2  | 0.1 | 0.1 | 0.2 | 0.3 | 0.3 |
+| x3  |  0  | 0.3 | 0.4 | 0.3 |   0 |
+| x4  | 0.1 |  0  |  0  | 0.9 |   0 |
+
+Where element (i, j) is how much attention score token i pays to token j. The mask should have the exact same shape.
+
 In the most vanilla form, **your mask should be filled with either True or False** (where True's are in the grids/indices that you want to mask - intuitively, you tell the computer "true, yes, I want to mask that token").
 
 You apply this mask to the score tensor in your attention layer by calling `scores.masked_fill_(your_mask, float('-inf'))`. Visually, picture that you are laying your mask on top of the score tensor (literally, masking it). During the `masked_fill_` method, wherever your mask tensor has a True value, imagine the computer just looks down at the exact same grid on the score tensor and set that value to `float('-inf')`, thus achieving the masking.
