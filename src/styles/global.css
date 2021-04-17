@@ -46,3 +46,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .blog-post ul > li {
   list-style-type: disc;
 }
+
+.card-content {
+  height: 420px;
+  overflow: scroll;
+}
